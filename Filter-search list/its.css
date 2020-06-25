@@ -1,0 +1,42 @@
+body {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.18rem;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+#inputBar {
+  width: 95%;
+  border: 1px solid #ddd;
+  background-image: url("searchicon.png");
+  background-position-x: left;
+  background-position-y: center;
+  background-size: 2.1rem;
+  background-repeat: no-repeat;
+  padding: 10px 0 10px 35px;
+  font-size: 1.3rem;
+  z-index: 5;
+  /* margin-left: 35px; */
+  outline: rgb(182, 181, 181);
+}
+/* #inputBar::after {
+} */
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+ul li {
+  background-color: #eee;
+  border: 1px solid rgb(221, 220, 220);
+  padding: 10px 0;
+}
+ul li:hover {
+  background-color: rgb(185, 185, 185);
+}
