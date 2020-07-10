@@ -1,0 +1,21 @@
+h1 {
+  background-color: rgb(74, 146, 74);
+  text-align: center;
+  padding: 40px;
+}
+.lower {
+  background-color: rgb(246, 245, 245);
+}
+
+.lower p {
+  padding: 10px 20px;
+}
+
+.ticker {
+  height: 40px;
+  background-color: rgb(236, 236, 176);
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+
