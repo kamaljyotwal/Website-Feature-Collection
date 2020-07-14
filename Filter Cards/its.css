@@ -44,13 +44,13 @@ button:active {
   padding: 2px;
   display: none;
   animation-name: cards;
-  animation-duration: 350ms;
+  animation-duration: 300ms;
 }
 .show {
   display: block;
-  transition: all 300ms ease;
+  animation-timing-function: ease;
   animation-name: cards;
-  animation-duration: 350ms;
+  animation-duration: 300ms;
 }
 @keyframes cards {
   0% {
