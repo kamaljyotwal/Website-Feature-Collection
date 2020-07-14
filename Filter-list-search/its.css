@@ -18,12 +18,8 @@ body {
   padding: 10px 0 10px 35px;
   font-size: 1.3rem;
   z-index: 5;
-  /* margin-left: 35px; */
   outline: rgb(182, 181, 181);
 }
-/* #inputBar::after {
-} */
-
 ul {
   padding: 0;
   list-style: none;
