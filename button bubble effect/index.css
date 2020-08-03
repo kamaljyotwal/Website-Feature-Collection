@@ -1,10 +1,75 @@
-html{
-    display: flex;
-    justify-content: center;
-    height: 100%;
-    align-items: center;
+html {
+  display: flex;
+  justify-content: left;
+  height: 100%;
+  align-items: center;
 }
 
-button{
-   outline:  none;
+button {
+  min-height: 60px;
+  min-width: 150px;
+  margin-left: 200px;
+  outline: none;
+  /* padding: 12px 35px; */
+  font-size: 1.25rem;
+  outline: none;
+  border: none;
+  background-color: rgb(253, 208, 208);
+  position: relative;
+  border-radius: 50px;
+  transition: all 200ms linear;
+  letter-spacing: 1.2px;
+  box-shadow: 1px 1px 2px 2px rgb(238, 224, 226);
+}
+button:hover {
+  transform: translatey(-6px);
+}
+
+button::before {
+  content: "";
+  border: 4px solid pink;
+  border-radius: 50px;
+  min-width: calc(150px + 10px);
+  min-height: calc(60px + 10px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.4s;
+  box-shadow: 0px 0px 18px 5px rgb(236, 206, 210);
+}
+button:hover::before {
+  opacity: 1;
+}
+
+button::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  border: 3px solid rgb(194, 148, 155);
+  animation: bubble 1.2s infinite;
+  animation-timing-function: ease-out;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: -1;
+}
+button:hover::after {
+  animation: none;
+  display: none;
+}
+@keyframes bubble {
+  0% {
+    width: 40px;
+    height: 40px;
+    opacity: 1;
+  }
+  100% {
+    width: 150px;
+    height: 150px;
+    opacity: 0;
+  }
 }
