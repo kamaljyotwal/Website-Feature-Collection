@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300;1,400&display=swap");
+
+.moj {
+  border: 1px solid goldenrod;
+}
+*/ html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: roboto, sans-serif;
+  color: #222222;
+}
+.carousel-inner img {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.navbar {
+  padding: 0.7rem;
+}
+.navbar-nav {
+  padding-right: 30px;
+}
+.navbar-nav li {
+  padding-right: 20px;
+}
+.nav-link {
+  font-size: 1.05rem !important;
+}
+.carousel-caption {
+  position: absolute;
+  top: 55%;
+  transform: translateY(-50%);
+}
+
+.carousel-caption h1 {
+  font-size: 300%;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 10px #000;
+}
+
+.carousel-caption h3 {
+  font-size: 150%;
+  font-weight: 600;
+  text-shadow: 1px 1px 5px #000;
+  padding-bottom: 1rem;
+}
+.btn-primary {
+  background-color: #6648b1;
+  border: 1px solid #7e7399;
+  margin-left: 0.6rem;
+}
+
+.btn-primary:hover {
+  background-color: #4c3586;
+  border: 1px solid #605875;
+}
+
+.jumbotron {
+  padding: 3rem;
+  border-radius: 0;
+}
+
+.padding {
+  padding-bottom: 2rem;
+}
+.welcome {
+  margin: 0 auto;
+  width: 70%;
+  padding-top: 3rem;
+}
+.welcome hr {
+  border-top: 2px solid #b4b4b4;
+  width: 90%;
+  margin-top: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.fa-code {
+  color: rgb(206, 163, 82);
+}
+.fa-bold {
+  color: #6648b1;
+}
+.fa-css3 {
+  color: rgb(209, 82, 82);
+}
+
+.fa-css3,
+.fa-bold,
+.fa-code {
+  font-size: 3rem;
+  margin: 1rem;
+}
+
+.threeicons {
+  width: 85% !important;
+}
+
+.first2col h3 {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+.first2col p {
+  text-align: justify;
+}
+.first2col {
+  width: 95%;
+  margin: 0 auto;
+}
+
+#fixed {
+  background-image: url("./img/mac.png");
+  height: 500px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+figure {
+  margin: 0;
+}
+
+.fun {
+  width: 100%;
+  margin: 0;
+  background-color: #9c9c9c;
+  margin-bottom: 2rem;
+  border-radius: 0;
+  outline: none;
+}
+.fun:hover {
+  background-color: #b4b4b4;
+}
+.gif {
+  max-width: 100%;
+}
+
+.cards {
+  width: 90%;
+}
+.philosophyclass {
+  width: 90%;
+}
+.philosophyclass h3 {
+  padding-bottom: 1rem;
+}
+.social hr {
+  border-top: 1px solid #b4b4b4;
+  width: 60%;
+}
+.social a {
+  font-size: 3rem;
+  padding: 0.7rem;
+  transition: 250ms;
+  /* color: #b4b4b4; */
+}
+
+.social a:hover {
+  color: #b4b4b4;
+}
+
+footer {
+  background-color: #3f3f3f;
+  color: #d5d5d5;
+  padding-top: 2rem;
+}
+footer hr {
+  background-color: #d5d5d5;
+  width: 80%;
+}
+footer .row {
+  width: 90% !important;
+  margin: 0 auto;
+  padding-top: 1rem;
+}
+footer .row2 {
+  padding: 1rem;
+}
+/* Media Queries */
+@media (max-width: 768px) {
+  .carousel-inner h1 {
+    font-size: 2rem;
+  }
+  .carousel-inner h3 {
+    font-size: 1.1rem;
+  }
+  .carousel-inner .btn {
+    padding: 10px;
+  }
+  .jumbotron {
+    font-size: 0.8rem;
+  }
+  .welcome {
+    padding-top: 1rem;
+    width: 100%;
+  }
+  .thsecond {
+    padding: 0;
+    padding-bottom: 0;
+  }
+  .first2col {
+    width: 90%;
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 600px) {
+  .navbar {
+    padding: 0.5rem;
+  }
+  .carousel-caption {
+    padding: 0%;
+  }
+  .carousel-caption h1 {
+    padding: 0%;
+    font-size: 150%;
+  }
+  .carousel-caption h3 {
+    padding: 0%;
+  }
+
+  .carousel-caption button {
+    padding: 0%;
+  }
+  .carousel-indicators {
+    display: none;
+  }
+  .jumbotron {
+    padding: 1rem;
+  }
+  .lead1 {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .philosophyclasstext {
+    padding-top: 2rem !important;
+  }
+  .social .fa {
+    font-size: 35px;
+    margin: 0 5px !important;
+  }
+  .social {
+    padding-bottom: 0 !important;
+  }
+  .card {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
