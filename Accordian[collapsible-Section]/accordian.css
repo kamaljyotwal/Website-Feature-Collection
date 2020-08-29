@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind&family=Courgette&family=Roboto:wght@400&display=swap");
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+.button-main {
+  background-color: #eeeeee;
+  width: 100%;
+  padding: 10px 0;
+  text-align: left;
+  font-size: 1.15rem;
+  font-family: hind;
+  border: 1px solid rgb(216, 214, 214);
+  border-radius: 2px;
+  margin: 2px 0;
+  padding-left: 5px;
+  transition: background-color 200ms;
+  outline: none;
+}
+.button-main:hover {
+  /* cursor: pointer; */
+  background-color: #cacaca;
+}
+.active {
+  /* cursor: pointer; */
+  background-color: #dadada;
+}
+.panel {
+  max-height: 0;
+  /* display: none; */
+  background-color: white;
+  overflow: hidden;
+  transition: all 700ms ease;
+}
+.text {
+  font-size: 1.02rem;
+  font-family: roboto;
+  line-height: 1.5;
+}
+.accordian {
+  width: 70%;
+  margin: 0 auto;
+}
+.button-main::after {
+  content: "\2B9D";
+  float: right;
+  margin-right: 20px;
+  color: rgb(126, 126, 126);
+}
+.active::after {
+  content: "\2B9F";
+  color: rgb(126, 126, 126);
+}

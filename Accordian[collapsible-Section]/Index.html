@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accordian tutorial</title>
+    <link rel="stylesheet" href="accordian.css" />
+  </head>
+  <body>
+    <h2>This shows an collapsible Accordian.</h2>
+
+    <div class="accordian">
+      <button class="button-main" onclick="showaccor()">PHP 3 and 4</button>
+      <div class="panel">
+        <p class="text">
+          Zeev Suraski and Andi Gutmans rewrote the parser in 1997 and formed the base of PHP 3,
+          changing the language's name to the recursive acronym PHP: Hypertext Preprocessor. The
+          entire module was rewritten by a team of six programmers and then called PHP 3.0. The
+          language gained popularity because of its active development environment and because it
+          was free downloadable software. The concepts of Perl, Java and C have been implemented in
+          PHP 3.0, making the language convenient to understand. PHP 3.0 has the ability to perform
+          highly complex mathematical calculations and provide network information, simplifying the
+          writing of a database-enabled Web page.
+        </p>
+      </div>
+      <button class="button-main">PHP 5</button>
+      <div class="panel">
+        <p class="text">
+          In 2004, PHP 5 was released, powered by the new Zend Engine-II. PHP 5 included new
+          features such as improved support for OOPS, the PHP Data Objects(PDO) extension (which
+          defines a lightweight and consistent interface for accessing databases), and numerous
+          performance enhancements.
+          <br />
+          In 2008, PHP-5 became the only stable version under development. Late static binding had
+          been missing from PHP and was added in version 5.3. Many high-profile open-source projects
+          ceased to support PHP 4 in new code as of February 5, 2008, because of the GoPHP5
+          initiative,provided by a consortium of PHP developers promoting the transition from PHP 4
+          to PHP 5. Over time, PHP interpreters became available on most existing operating systems,
+          either by building them from the PHP source code, or by using pre-built binaries.
+        </p>
+      </div>
+      <button class="button-main">PHP 6 and Unicode</button>
+      <div class="panel">
+        <p class="text">
+          PHP received mixed reviews due to lacking native Unicode support at the core language
+          level. In 2005, a project was initiated to bring native Unicode support throughout PHP, by
+          embedding the (ICU) library,and representing text strings as UTF-16 internally. Since this
+          would cause major changes both to the internals of the language and to user code, it was
+          planned to release this as version 6.0 of the language, along with other major features
+          then in development.
+        </p>
+      </div>
+      <button class="button-main">PHP 7</button>
+      <div class="panel">
+        <p class="text">
+          During 2014 and 2015, a new major PHP version was developed, which was numbered PHP 7. PHP
+          7 is a major release of PHP programming language and is touted to be a revolution in the
+          way web applications can be developed and delivered for mobile to enterprises and the
+          cloud. This release is considered to be the most important change for PHP after the
+          release of PHP 5 in 2004.
+        </p>
+      </div>
+    </div>
+    <script src="accordian.js"></script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+body {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 20px;
+  box-sizing: border-box;
+  padding: 0;
+}
+.bar {
+  display: flex;
+  background-color: #f0f0f0;
+  border: 1px solid #dad8d8;
+  outline: none;
+}
+
+.tablinks {
+  border: none;
+  padding: 15px 20px;
+  outline: none;
+  background-color: #eee;
+}
+.tablinks:hover {
+  background-color: rgb(206, 205, 205);
+}
+.tablinks.active {
+  background-color: rgb(190, 190, 190);
+}
+
+.innersection {
+  display: none;
+  border: 1px solid #eeeeee;
+  padding: 20px 40px;
+}
+
+.innersection {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
