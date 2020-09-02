@@ -1,10 +1,6 @@
 body {
   background: rgb(255, 255, 255);
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(255, 233, 146, 0.637) 100%
-  );
+  background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 233, 146, 0.637) 100%);
 }
 .btn-container {
   margin: 0 auto;
@@ -16,7 +12,6 @@ button {
   border-radius: 4px;
   border: 1px solid #e6b983;
   padding: 15px 25px;
-
   background-image: linear-gradient(315deg, #e9b673 0%, #da955e 74%);
   color: white;
   margin-top: 40px;
@@ -30,7 +25,6 @@ button:active {
   /* background-color: rgb(251, 251, 251); */
   width: 90%;
   margin: 0 auto;
-
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -42,16 +36,12 @@ button:active {
   border-radius: 4px;
   margin: 15px;
   padding: 2px;
-  display: none;
+}
+.animation {
   animation-name: cards;
   animation-duration: 300ms;
 }
-.show {
-  display: block;
-  animation-timing-function: ease;
-  animation-name: cards;
-  animation-duration: 300ms;
-}
+
 @keyframes cards {
   0% {
     transform: scale(0.6, 0.6);
