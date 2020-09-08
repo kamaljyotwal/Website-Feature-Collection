@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.slider {
+  background: rgb(221, 197, 60);
+  width: 5px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50vw;
+  z-index: 10;
+  display: block;
+}
+.skewed .slider {
+  top: 50%;
+  height: 200%;
+  transform: skew(-15deg) translateY(-50%);
+  transform-origin: top;
+}
+
+#main {
+  position: relative;
+  width: 100%;
+  min-height: 50vw;
+  overflow: hidden;
+}
+.layer {
+  min-height: 50vw;
+  width: 100vw;
+  position: absolute;
+  overflow: hidden;
+}
+.layer .contentwrap {
+  min-height: 50vw;
+  width: 100vw;
+  position: absolute;
+}
+.layer .textcontainerRedWhite,
+.layer .textcontainerYellowbBlack,
+.layer .textcontainerRedWhite2,
+.layer .textcontainerYellowbBlack2 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+  width: 30%;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 1.1rem;
+}
+.layer .textcontainerRedWhite p,
+.layer .textcontainerYellowbBlack p,
+.layer .textcontainerRedWhite2 p,
+.layer .textcontainerYellowbBlack2 p {
+  width: 85%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.1rem;
+}
+#main ul {
+  list-style: none;
+  margin: 0 auto;
+  width: 50%;
+  padding: 0;
+}
+
+.topMainYellowbBlack h4 {
+  width: 90% !important;
+  font-size: 1.8rem;
+  color: gold;
+  text-transform: uppercase;
+  margin: 0 auto 1.5rem;
+  text-align: center;
+}
+.bottomMainRedWhite h4 {
+  font-size: 1.8rem;
+  color: #bd6063;
+
+  text-transform: uppercase;
+  margin: 0 0 1.5rem 0;
+  text-align: center;
+}
+.topMainYellowbBlack img {
+  height: auto;
+  width: 28%;
+  position: absolute;
+  top: 50.5%;
+  left: 51%;
+  transform: translate(-50%, -50%);
+}
+.bottomMainRedWhite img {
+  height: 560px;
+  width: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.bottomMainRedWhite {
+  background: #1c1c1c;
+  z-index: 1;
+  width: 100%;
+}
+.bottomMainRedWhite .textcontainerRedWhite {
+  color: white;
+  right: 5% !important;
+}
+.bottomMainRedWhite .textcontainerRedWhite2 {
+  color: white;
+  left: 5% !important;
+  position: absolute;
+}
+.topMainYellowbBlack {
+  background: #e1dfe0;
+  width: 50vw;
+  z-index: 2;
+}
+.topMainYellowbBlack .textcontainerYellowbBlack {
+  left: 5%;
+  font-family: sans-serif;
+}
+.topMainYellowbBlack .textcontainerYellowbBlack2 {
+  right: 5%;
+  font-family: sans-serif;
+}
+.skewed .topMainYellowbBlack {
+  z-index: 5;
+  transform: skew(-15deg);
+  margin-left: -500px;
+
+  width: calc(50vw + 500px);
+}
+.skewed .topMainYellowbBlack .contentwrap {
+  transform: skew(15deg);
+  margin-left: 500px;
+}
