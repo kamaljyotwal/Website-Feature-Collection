@@ -21,6 +21,7 @@ body {
 }
 
 #main {
+  /* border: 1px solid red; */
   position: relative;
   width: 100%;
   min-height: 50vw;
@@ -77,7 +78,6 @@ body {
 .bottomMainRedWhite h4 {
   font-size: 1.8rem;
   color: #bd6063;
-
   text-transform: uppercase;
   margin: 0 0 1.5rem 0;
   text-align: center;
@@ -129,10 +129,69 @@ body {
   z-index: 5;
   transform: skew(-15deg);
   margin-left: -500px;
-
   width: calc(50vw + 500px);
 }
 .skewed .topMainYellowbBlack .contentwrap {
   transform: skew(15deg);
   margin-left: 500px;
+}
+.disclaimer {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 0.5rem;
+  font-weight: lighter;
+  color: #817f80;
+}
+/* MEDIA QUERY MOBILE */
+@media (min-width: 320px) and (max-width: 480px) {
+  .topMainYellowbBlack img {
+    height: auto;
+    width: 30%;
+  }
+  .bottomMainRedWhite img {
+    height: 85%;
+    width: auto;
+  }
+
+  .layer .textcontainerRedWhite,
+  .layer .textcontainerYellowbBlack,
+  .layer .textcontainerRedWhite2,
+  .layer .textcontainerYellowbBlack2 {
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 80%;
+    right: 20px;
+    width: 30%;
+    font-size: 15px;
+  }
+
+  .layer .textcontainerRedWhite p,
+  .layer .textcontainerYellowbBlack p,
+  .layer .textcontainerRedWhite2 p,
+  .layer .textcontainerYellowbBlack2 p {
+    width: 95%;
+    margin: 0 auto;
+    /* text-align: center; */
+    font-size: 10px;
+  }
+
+  .topMainYellowbBlack h4 {
+    /* border: 1px solid red; */
+    width: 100% !important;
+    font-size: 0.7rem;
+    color: gold;
+    text-transform: uppercase;
+    margin: 0 auto 1.5rem;
+    text-align: center;
+  }
+  .bottomMainRedWhite h4 {
+    font-size: 0.7rem;
+    color: #bd6063;
+    text-transform: uppercase;
+    margin: 0 0 1.5rem 0;
+    text-align: center;
+  }
+  ul li {
+    font-size: 10px;
+  }
 }
